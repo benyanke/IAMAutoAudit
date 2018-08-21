@@ -45,5 +45,21 @@ Additional settings:
 `aws iam list-users`
 
 **List Keys By User**
+
 Loop through users found above.
+
 `aws iam list-access-keys --user-name "$USER"`
+
+
+
+### Bash example
+
+Listing all keys:
+
+```
+for u in `aws iam list-users | jq --raw-output '[.Users[].UserName] | join(" ")'` ; do
+  echo "";
+  echo "User $u keys:" ;
+  aws iam list-access-keys --user-name "$u" | jq '.AccessKeyMetadata' ;
+done;
+```
