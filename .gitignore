@@ -1,0 +1,5 @@
+# Nano swap files
+.*.swp
+
+# Ignore the compiled binary
+iamaudit

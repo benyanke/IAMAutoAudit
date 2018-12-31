@@ -1,4 +1,4 @@
-# IAMAutoAudit - An IAM Account Security Auditor
+# IAMaudit - An IAM Account Security Auditor
 
 A tool designed to allow a user to audit IAM users and keys, ensuring credentials are being propery rotated. Designed to be run in Lambda, but could be run anywhere.
 
