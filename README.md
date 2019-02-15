@@ -36,6 +36,7 @@ IAM User Checks:
 Additional settings:
  * Ignore Users With No Permissions - ignores users with no permissions granted (ie - they are effectively disabled)
  * Alert Delay - Don't send alerts more than every xx days
+ * Email tag name - name of the tag to check for the user's email for alerting
 
 ## Implementation Notes
 
