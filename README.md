@@ -31,6 +31,7 @@ IAM User Checks:
  * User Password Age - tracks which passwords are older than xxx days
  * User Inactive - tracks users who have not logged into the console or used keys in xxx days
  * User MFA Enabled - Ensures users in specified groups have MFA enabled
+ * Direct attach policy - Ensures all policies are granted via groups, not directly to users (optional but best practice)
 
 Additional settings:
  * Ignore Users With No Permissions - ignores users with no permissions granted (ie - they are effectively disabled)
